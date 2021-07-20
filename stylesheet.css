@@ -1,0 +1,289 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: black;
+    padding:0 30px 0 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+.menubar{
+    width: 60%;
+}
+.menubar li{
+    margin: 0 20px;
+}
+.more ul{
+    flex-direction: column; display: none;
+}
+.searchbtn{
+    display: flex;
+    align-items: center;
+}
+.poster{
+    width: 100%;
+    height: 100vh;
+    background-image: url(la.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+.wallpaper{
+    position: relative;
+    top: 80vh;
+}
+.about{
+    text-align: center;
+    padding: 30px;
+    
+}
+.about h1{
+    font-size: xx-large; 
+    margin: 4% 5% 2% 5%; 
+    font-weight: lighter; 
+    letter-spacing: 2px;
+}
+.about i{
+    font-size: 17px;
+}
+.band p{
+    width: 75%; 
+    margin: 3% auto; 
+    text-align: justify; 
+    font-size: 19px; 
+    word-spacing: 3px;
+}
+.about .members{
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+.members img{
+    width: 75%; 
+    height: auto; 
+    border-radius: 5px;
+}
+.books{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 8% 0%;
+}
+.books h1{
+    margin-top: 0; 
+    font-size: 2.5em; 
+    font-weight: lighter; 
+    letter-spacing: 2px;    
+}
+.books i{
+    color: gray; 
+    font-size: 18px; 
+    font-weight: bolder;
+}
+.tickets{
+    margin: 5% auto 3%;
+    background-color: white;
+    color: gray;
+    width: 75%;
+    text-align: left;
+    font-size: 20px;
+}
+.tickets p{
+    border-bottom: 1px solid gray;
+    padding: 2% 3%;
+}
+
+.tickets span{
+    padding: 3px 5px;
+    margin: 0;
+    background-color: orangered;
+    color: white;
+    border-radius: 3px;
+    position: relative;
+    left: 5%;
+}
+.shows{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.locations{
+    width: 30%;
+    background-color: white;
+    color: black;
+    text-align: left;
+}
+.date{
+    padding: 3% 10% 10%;
+    line-height: 2;
+}
+.date button{
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}
+.contact{
+    width: 100%;
+    height: 65vh;
+    text-align: center;
+    padding: 10% 0;
+}
+.contact h1{
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-weight: lighter;
+}
+.contact i{
+    color: gray;
+    margin: 5%;
+}
+.contact .information{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+.contact .info{
+    margin: 0;
+    width: 50%;
+    text-align: left;
+    font-size: 1.25em;
+    line-height: 0;
+    word-wrap: normal;
+}
+.contact .info span{
+    padding-right: 10px;
+}
+.contact .form{
+    text-align: left;
+    width: 50%;
+}
+.contact .input {
+    display: flex;
+}
+.contact .input input{
+    width: 50%;
+    margin: 5px;
+    font-size: 20px;
+    padding: 10px;
+}
+.contact .form input{
+    font-size: 20px;
+    padding: 10px;
+    width: 93%;
+    margin: 5px;
+}
+.contact button{
+    margin: 15px 1px;
+    float: right;
+    font-size: 20px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+.links{
+    width: 100%;
+}
+.map{
+    width: 100%;
+}
+.map img{
+    width: 100%;
+}
+.link{
+    text-align: center;
+    font-size: 30px;
+    margin: 1.5em 0;
+    color: gray;
+}
+.link span{
+    letter-spacing: 3px;            
+}
+.link span:hover{
+    color: black;
+}
+.link p{
+    font-size: 20px;
+}
+.link a{
+    text-decoration: none;
+    margin-left: 7px;
+    color: gray;
+}
+@media screen and (max-width: 1020px) {
+    .contact .info span{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 720px){
+    .about .members{
+        display: grid;
+        grid-template-columns:  25% 25% 25%;
+        justify-content: space-evenly;
+        padding: 5%;
+
+    }
+    .about .members img{
+        width: 100%;
+        height: auto;
+    }
+    .date{
+        line-height: 1;
+    }
+}
+@media screen and (max-width: 720px){
+    nav .menu{
+        display: none;
+    }
+    .about .members{
+        display: block;
+    }
+    .about .members img{
+        width: 40%;
+    }
+    .shows{
+        display: flex;
+        flex-direction: column;
+    }
+    .shows .locations{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .contact{
+        height: 80vh;
+    }
+    .contact .information{
+        flex-direction: column;
+
+    }
+    .contact .info{
+        width: 100%;
+    }
+    .contact .form{
+        width: 100%;
+    }
+    .contact .form .input{
+        display: block;
+    }
+}
