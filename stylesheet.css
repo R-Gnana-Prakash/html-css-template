@@ -5,34 +5,77 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 nav{
-    background-color: black;
-    padding:0 30px 0 0;
-    font-size: 20px;
-    display: flex;
-    justify-content: space-between;
     position: sticky;
     top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 nav a{
     color: white;
     text-decoration: none;
+    letter-spacing: 2px;
 }
-nav ul{
+nav .menubar{
+    width: 95%;
+    background-color: black;
+}
+.menubar ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
-    list-style-type: none;
-}
-.menubar{
-    width: 60%;
+    justify-content: flex-start;
 }
 .menubar li{
-    margin: 0 20px;
+    list-style-type: none;
+    font-size: 17px;
+    padding: 20px 25px;
+    margin-right: 2%;
+}
+.menubar li:hover{
+    background-color: gray;
+}
+.menubar li:hover a{
+    color: black;
+}
+nav .searchbtn{
+    text-align: end;
+    padding: 0;
+    background-color: black;
+}
+nav .searchbtn span{
+    margin: 0;
+    font-size: 17px;
+    padding: 22px 30px;
+}
+nav .searchbtn span:hover{
+    background-color: orangered;
+}
+.more{
+    position: relative;
+}
+.more .items{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+}
+.more ul a{
+    color: black;
 }
 .more ul{
-    flex-direction: column; display: none;
-}
-.searchbtn{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+.more ul > li{
+    font-size: 17px;
+    padding: 20px 25px;
+    margin: 0;
+}
+.more:hover .items{
+    display: block;
 }
 .poster{
     width: 100%;
